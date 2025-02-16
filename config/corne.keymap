@@ -13,7 +13,7 @@
 #define both_layer    3
 
 &caps_word {
-    mods = <(LSFT(RSFT))>;
+    mods = < LSFT(RSFT) >;
 };
 
 / {
