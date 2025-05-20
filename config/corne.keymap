@@ -19,7 +19,7 @@
 
         combo_caps_word {
             timeout-ms = <300>;
-            key-positions = <24 35>;
+            key-positions = <13 22>;
             bindings = <&caps_word>;
         };
     };
@@ -37,11 +37,11 @@
             hold-trigger-key-positions = <13 14 15 16 19 20 21 22>;
         };
 
-        questionMark: questionMark {
+        quotes: quotes {
             compatible = "zmk,behavior-tap-dance";
-            label = "QUESTIONMARK";
+            label = "QUOTES";
             #binding-cells = <0>;
-            bindings = <&kp PIPE>, <&kp QUESTION>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
 
             tapping-term-ms = <200>;
         };
@@ -90,7 +90,7 @@
             bindings = <
 &trans  &kp EXCL    &kp AT        &kp HASH       &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS              &kp ASTRK             &kp LPAR                  &kp RPAR               &trans
 &trans  &kp LSHIFT  &kp LEFT_ALT  &kp LCTRL      &kp LGUI   &trans       &kp MINUS  &HomeMods RGUI EQUAL  &HomeMods RCTRL LBKT  &HomeMods RIGHT_ALT RBKT  &HomeMods RSHIFT BSLH  &trans
-&trans  &trans      &trans        &kp GRAVE      &kp TILDE  &trans       &kp UNDER  &kp PLUS              &kp LBRC              &kp RBRC                  &kp PIPE               &trans
+&trans  &trans      &quotes       &kp GRAVE      &kp TILDE  &trans       &kp UNDER  &kp PLUS              &kp LBRC              &kp RBRC                  &kp PIPE               &trans
                                   &kp BACKSPACE  &mo 3      &kp SPACE    &kp RET    &trans                &kp TAB
             >;
         };
